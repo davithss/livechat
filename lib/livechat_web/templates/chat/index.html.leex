@@ -1,7 +1,8 @@
-<ul id="msgs" style="list-style: none; min-height:200px; border: 1px solid; padding: 10px;">
-    <%= for msg <- @messages do %>
-        <li><strong> <%= msg.username %> : </strong> <%= msg.content %> </li>
-    <% end %>
-</ul>
-
+<section class="box">
+  <ul id="msgs" style="list-style: none; min-height:200px; border: 1px solid; padding: 10px;">
+      <%= for msg <- @messages do %>
+          <li><strong> <%= msg.username %> : </strong> <%= msg.content %> </li>
+      <% end %>
+  </ul>
+</section>
 <%= render "form.html", assigns %>
